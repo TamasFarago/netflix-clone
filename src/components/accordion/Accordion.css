@@ -2,6 +2,7 @@
     background: #000000;
     color: white;
     padding: 70px 45px;
+    border-bottom: 8px solid rgb(46, 46, 46);
 }
 
 .accordion h1 {
@@ -26,7 +27,7 @@ margin: 0 auto;
     font-size: 30px;
     padding: 15px 25px;
     margin-bottom: 5px;
-    cursor: pointer;
+    user-select: none;
     
 }
 
@@ -35,7 +36,6 @@ margin: 0 auto;
     white-space: pre-wrap;
     height: auto;
     max-height: 0px;
-    /* opacity: 0; */
     transition: max-height .25s cubic-bezier(.5,0,.1,1);
     overflow: hidden;
     min-width: 100px;
@@ -51,4 +51,28 @@ margin: 0 auto;
     max-height: 1200px;
     opacity: 1;
     height: auto;
+}
+
+.accordion__item--headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion__item--headerContainer img {
+    filter: brightness(0) invert(1);
+    width: 24px;
+    user-select: none;
+    height: 24px;
+    margin-right: 30px;
+}
+
+.form__p {
+    text-align: center;
+    max-width: 650px;
+    margin: auto;
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }

@@ -1,0 +1,42 @@
+footer {
+    background: black;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #757575;
+}
+
+footer p {
+    max-width: 1090px;
+    margin: auto;
+    padding-left: 105px;
+    padding-top: 70px;
+}
+
+.footer__grid ul li a {
+    text-decoration: none;
+    color: #757575;
+}
+
+.footer__grid ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    margin: auto;
+    max-width: 1090px;
+    padding: 70px 45px;
+    padding-top: 30px;
+}
+
+.footer__grid ul {
+    margin-left: 60px;
+}
+
+.footer__grid ul li {
+    margin-bottom: 18px;
+    font-size: 13px;
+}

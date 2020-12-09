@@ -1,0 +1,235 @@
+.sign_in {
+    background-image: url("../../images/misc/home-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+.sign_in_error {
+    padding: 10px 20px;
+    background: #e87c03;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.sign_in_error p {
+    font-size: 14px !important;
+    margin-top: 0 !important;
+    color: white !important;
+}
+
+.sign_in__header img {
+    width: 166px;
+    height: 45px;
+    margin-left: 3%;
+    margin-top: 25px;
+}
+
+.sign_in__form {
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.65);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 68px 40px;
+    min-height: 660px;
+}
+
+.sign_in__form h1 {
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.sign_in__form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign_in__form form label {
+    font-size: 18px;
+    /* padding-top: 24px; */
+    outline: none;
+    background: #333333;
+    border: none;
+    margin-bottom: 15px;
+    color: white;
+    position: relative;
+    border-radius: 5px;
+}
+
+.sign_in__form form label input {
+    background: inherit;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: white;
+    width: 100%;
+    height: 50px;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.sign_in__form form label input {
+    border-radius: 5px;
+}
+
+.sign_in__form form label label{
+    order: -1;
+    position: absolute;
+    color: #858585;
+    top: 50%;
+    font-size: 16px;
+    left: 20px;
+    transform: translateY(-50%);
+    transition: .1s ease-in-out;  
+}
+
+.egy:focus + .ketto,
+.egy:not(:focus):valid + .ketto
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+}
+
+.sign_in__form form button {
+    background: #e50914;
+    height: 48px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+}
+
+.sign_in__form form button:disabled {
+    background: #a5070f;
+}
+
+.sign_in__form p {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.sign_in__form p a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.sign_in__form p a:hover {
+    text-decoration: underline;
+}
+
+.sign_in__form span {
+    color: #8c8c8c;
+    font-size: 13px;
+    margin-top: 13px;
+}
+
+.sign_in__form--checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.sign_in__form--checkbox span {
+    color: #b3b3b3;
+    padding-top: 5px;
+    font-weight: 500;
+}
+
+.sign_in__form input {
+    -webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 7px;
+	border-radius: 2px;
+	display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 5px;
+    outline: none;
+    border: 1px solid white;
+    
+}
+
+.sign_in__form input:checked {
+	background-color: #e9ecee;
+	border: 1px solid white;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+    
+}
+
+.sign_in__form input:checked:after {
+	content: "\2714";
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 2px;
+	color: black;
+}
+
+.learn_more {
+    color: #0071eb !important;
+    cursor: pointer;
+}
+
+.learn_more:hover {
+    text-decoration: underline;
+}
+
+.learn_more_open {
+    opacity: 1 !important;
+}
+
+.learn_more_text {
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.learn_more_text p{
+    font-size: 13px;
+    color: #8c8c8c;
+    margin-top: 10px;
+}
+
+.learn_more_text p span {
+    color: #0071eb;
+    cursor: pointer;
+}
+
+.learn_more_text p span:hover {
+    text-decoration: underline;
+}
+
+.facebook__login {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.facebook__login span {
+    margin-top: 0;
+    color: #737373;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.facebook_icon {
+    height: 20px;
+    width: 20px;
+    color: #4267B2;
+    background: white;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
