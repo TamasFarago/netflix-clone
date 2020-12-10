@@ -1,9 +1,19 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import "./Profiles.css"
 import logo from "../../logo.svg"
 import Loading from "../../components/loading/Loading"
 
+
 function Profiles({user, setProfile, loading}) {
+    const [photo, setPhoto] = useState(null)
+
+   useEffect(() => {
+       if(user.photoURL) {
+        setPhoto(`images/users/${user.photoURL}.png`)
+       } else {
+           setPhoto(null)
+       }
+   }, [])
     return (
         <div className="profiles">
             <header className="profiles__header">
@@ -17,7 +27,7 @@ function Profiles({user, setProfile, loading}) {
                         <li onClick={() => setProfile({displayName: user.displayName, photoURL: user.photoURL})}>
                             <div className="profiles__list--inner">
                                 <div className="inner-img">
-                                <img src="images/users/1.png" alt="" />
+                                {!photo? <img src="images/users/1.png" alt="userphoto" /> :  <img src={photo} alt="userphoto" />}
                                 </div>
                                 <span>{user.displayName}</span>
                             </div>

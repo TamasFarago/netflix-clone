@@ -35,6 +35,10 @@
     border: 3px solid white;  
 }
 
+.profiles__list ul li:hover .profiles__list--inner span {
+    color: white;
+}
+
 .profiles__list h1 {
     display: flex;
     justify-content: center;

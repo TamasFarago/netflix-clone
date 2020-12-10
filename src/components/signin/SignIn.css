@@ -105,6 +105,10 @@
     border: none;
 }
 
+.sign_in__form form button:enabled {
+    cursor: pointer;
+}
+
 .sign_in__form form button:disabled {
     background: #a5070f;
 }
