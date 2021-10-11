@@ -9,6 +9,7 @@ import VolumeUpIcon from '@material-ui/icons/VolumeUp';
 import { Link } from "react-router-dom"
 import { FirebaseContext } from '../../context/firebase';
 import Slides from "../slides/Slides"
+import Footer from "../footer/Footer"
 
 function Main({user, films, series, slides}) {
     const arrow = <FontAwesomeIcon icon={faSortDown} />
@@ -108,9 +109,13 @@ function Main({user, films, series, slides}) {
                      <section className="slides__container">
                         <Slides slideRows={slideRows} category={category}/>
                     </section> 
+
                     
                     
              </main>
+             <footer>
+                 <Footer style={{ backgroundColor: '#141414' }}/>
+             </footer>
         </div>
     )
 }

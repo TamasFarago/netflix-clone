@@ -6,10 +6,10 @@ function Slides({slideRows, category}) {
 
     const breakPoints = [
        
-        {width: 300, itemsToShow: 2},
-        {width: 568, itemsToShow: 3},
-        {width: 700, itemsToShow: 4},
-        {width: 1100, itemsToShow: 5}
+        {width: 300, itemsToShow: 2 ,itemsToScroll: 2},
+        {width: 568, itemsToShow: 3, itemsToScroll: 3},
+        {width: 700, itemsToShow: 4, itemsToScroll: 4},
+        {width: 1100, itemsToShow: 5, itemsToScroll: 5}
     ]
     
 
@@ -24,7 +24,7 @@ console.log("hi", slideRows)
                        <div className="slide__row">
                        <Carousel breakPoints={breakPoints}>
                        {slideItem.data.map((item, index) => (
-                                 <img number={index+1} src={`images/${category}/${item.genre}/${item.slug}/small.jpg`} />
+                                 <img src={`images/${category}/${item.genre}/${item.slug}/small.jpg`} />
                            ))}
                             </Carousel>
                        </div>

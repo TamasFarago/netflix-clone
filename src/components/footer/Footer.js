@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Footer.css"
 
-function Footer() {
+function Footer({style}) {
     return (
-        <footer>
+        <footer style={style}>
             <p><a href="#">Questions? Contact us.</a></p>
             <div className="footer__grid">
                 <ul>

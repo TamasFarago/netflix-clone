@@ -25,7 +25,7 @@ function Browse() {
     }, [profile.displayName])
     
     return (
-        profile.displayName? (
+        !profile.displayName? (
         <div>
             <Profiles user={user} setProfile={setProfile} loading={loading}/>
         </div>) : 

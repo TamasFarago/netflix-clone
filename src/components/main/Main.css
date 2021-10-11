@@ -1,5 +1,6 @@
 .main {
     /* height: 100vh; */
+    /* min-width: 400px; */
 }
 
 .main video {
@@ -103,7 +104,6 @@
 }
 
 .search__input {
-    /* width: 268px; */
     width: 0;
     opacity: 0;
     height: 34px;
@@ -160,9 +160,6 @@
     opacity: 1;
 }
 
-/* .user__dropdown:hover {
-    opacity: 1;
-} */
 
 .user__dropdown--arrow {
     position: absolute;
@@ -179,7 +176,6 @@
 .profile__content--user {
     display: flex;
     align-items: center;
-    /* border-bottom: 1px solid grey; */
     padding-bottom: 20px;
 }
 
@@ -295,7 +291,7 @@
     background: #141414;
     position: relative;
     z-index: 999;
-    -webkit-box-shadow: -1px -6px 28px 29px rgba(0,0,0,0.22);
--moz-box-shadow: -1px -6px 28px 29px rgba(0,0,0,0.22);
-box-shadow: -1px -6px 28px 29px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 4px -37px 63px 60px rgba(20,20,20,1);
+    -moz-box-shadow: 4px -37px 63px 60px rgba(20,20,20,1);
+    box-shadow: 4px -37px 63px 60px rgba(20,20,20,1);
 }
