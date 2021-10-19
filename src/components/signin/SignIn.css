@@ -87,6 +87,10 @@
     transition: .1s ease-in-out;  
 }
 
+.ketto {
+    cursor: text;
+}
+
 .egy:focus + .ketto,
 .egy:not(:focus):valid + .ketto
 {

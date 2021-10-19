@@ -59,27 +59,30 @@ function SignUp() {
                             type="text"  
                             className="egy"
                             required
+                            id="firstname"
                             value={firstName}
                             onChange={(e) => setFirstName(e.target.value)} />
-                        <label className="ketto">First Name</label>
+                        <label for="firstname" className="ketto">First Name</label>
                     </label>
                     <label>
                         <input 
                             type="text"  
                             className="egy"
                             required
+                            id="email"
                             value={emailAddress}
                             onChange={(e) => setEmailAddress(e.target.value)} />
-                        <label className="ketto">Email Address</label>
+                        <label for="email" className="ketto">Email Address</label>
                     </label>
                     <label>
                         <input 
                             type="password"  
                             className="egy"
                             required 
+                            id="pw"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}/>
-                        <label className="ketto">Password</label>
+                        <label for="pw" className="ketto">Password</label>
                     </label>
                     <button disabled={isInvalid} type="submit">Sign Up</button>
                 </form>

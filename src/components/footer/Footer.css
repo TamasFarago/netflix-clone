@@ -7,13 +7,18 @@ footer {
 footer p a {
     text-decoration: none;
     color: #757575;
+    display: flex;
+    align-self: center;
 }
 
 footer p {
     max-width: 1090px;
-    margin: auto;
-    padding-left: 105px;
+    margin: 0 auto;
     padding-top: 70px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 105px;
+
 }
 
 .footer__grid ul li {
@@ -46,4 +51,13 @@ footer p {
 .footer__grid ul li {
     margin-bottom: 18px;
     font-size: 13px;
+}
+
+@media screen and (max-width: 400px){
+    .footer__grid {
+        padding: 30px 0
+    }
+    footer p {
+        padding: 30px 45px !important
+    }
 }

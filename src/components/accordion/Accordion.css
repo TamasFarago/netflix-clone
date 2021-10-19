@@ -76,3 +76,24 @@ margin: 0 auto;
     margin-top: 70px;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 638px){
+    .accordion h1 {
+        font-size: 2rem
+    }
+    .accordion {
+        padding: 70px 20px
+    }
+}
+
+@media screen and (max-width: 422px){
+    .accoridon__item--header, .accordion__item--body p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .accoridon__item--header, .accordion__item--body p {
+        font-size: 15px;
+    }
+}

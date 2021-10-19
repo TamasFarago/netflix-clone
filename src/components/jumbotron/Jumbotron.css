@@ -1,6 +1,6 @@
 .jumbotron {
     background:linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,1)), url("../../images/misc/home-bg.jpg");
-    height: 700px;
+    min-height: 700px;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -68,13 +68,18 @@
 } 
 
 .jumbotron__content--inner {
-    width: 700px;
+    width: 70%;
     margin-top: 80px;
+    position: relative;
+   display: flex;
+   flex-direction: column;
+   align-self: center;
 }
 
 .jumbotron__form {
     display: flex;
     position: relative;
+    justify-content: center;
 }
 
 .jumbotron__form input {
@@ -150,4 +155,28 @@ background: #F40612;
 	font-size: 13px;
     opacity: 1;
     font-weight: 700;
+}
+
+@media screen and (max-width: 818px){
+    .grid__container {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 758px){
+    .jumbotron__form input {
+        width: 70%
+    }
+    .jumbotron__form--button {
+        width: 100px
+    }
+    .jumbotron__form--button p {
+        font-size: 12px
+    }
+    .jumbotron__form {
+        width: 100% !important;
+        align-self: center;
+    }
 }

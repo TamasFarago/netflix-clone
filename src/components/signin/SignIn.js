@@ -52,18 +52,20 @@ function SignIn() {
                             type="text"  
                             className="egy"
                             required
+                            id="email"
                             value={emailAddress}
                             onChange={(e) => setEmailAddress(e.target.value)} />
-                        <label className="ketto">Email Address</label>
+                        <label for="email" className="ketto">Email Address</label>
                     </label>
                     <label>
                         <input 
                             type="password"  
                             className="egy"
                             required 
+                            id="password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}/>
-                        <label className="ketto">Password</label>
+                        <label for="password" className="ketto">Password</label>
                     </label>
                     <button disabled={isInvalid} type="submit">Sign In</button>
                     <div className="sign_in__form--checkbox">
